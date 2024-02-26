@@ -1,0 +1,45 @@
+Core Fundamentals
+=================
+
+1. "Everything in Javascript happens inside an Execution Context"
+2. "Javascript is a synchronous single-threaded language"
+
+
+
+
+
+** Execution Context **
+  =================
+
+    - "Everything in Javascript happens inside an Execution Context"
+    - You can asume it as a big container in which whole Javascrip code is executed.
+    - It has two components in it.
+
+        a) Memory component
+        b) Code component
+
+a) Memory component
+   ----------------
+    * All the variables and functions are stored as key-value pairs.
+    * It is also known as "Variable Environment".
+
+b) Code component
+   --------------
+    * This is the place where code is executed one line at a time.
+    * It is also known as the "Thread of Exeecution".
+
+
+
+
+
+
+** Single Threaded **
+   ===============
+
+    - It means javascript can only execute one command at a time.  
+
+** Synchronous Single-Threaded **
+   ===========================
+
+   - It means javascript can only execute one command at a time in a specific manner.
+   - It can only go to the next line once the current line finished executing.

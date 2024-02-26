@@ -1,0 +1,22 @@
+Behind the scene of Javascript code
+===================================
+
+- When you run your code a Global Execution Contex is Created which has two components which are Memory component and Code component.
+
+- This Execution Contex is created in two phases first phase is known as the creation/memory creation phase and second phase is known as the code execution phase.
+
+- First let's see the creation phase or memory creation phase, In this phase javascript will allocate memory to all its variablea and functions in the form of key-value pairs in which variables are assigned 'undefined' and functions are assigned their whole body. 
+
+- Second code execution phase, in this phase values are assigned to variables and when we invoke a function, a new execution context is created whit its both components memory creation and code execution. Now, variables inside the functions will assigned 'undefined' in phase1 and in the phsase2 each line will execut and assign values to the variables accordingly. After completion of function execution, controll will return to Global Execution Context and function's execution contex will be deleted.
+
+- Once Javascript is done with the execution, Globale execution context will also be deleted.
+
+
+** All this thing is mannaged by Call Stack **
+
+When we run a programme call stack is populated with the Global Execution contaxt.
+
+When a function is invoked, a new execution contex is created, this execution context is put inside the stack.
+
+After function execution is completed, Execution contex is poped out from the stack and controll goes to Global Execution Context.
+
