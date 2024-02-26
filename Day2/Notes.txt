@@ -22,3 +22,11 @@ When a function is invoked, a new execution contex is created, this execution co
 
 After function execution is completed, Execution contex is poped out from the stack and controll goes to Global Execution Context.
 
+#### "Call Stack maintains the order of execution of Execution Contexts" 
+
+It is also known as :
+    - Execution Context Stack
+    - Program Stack
+    - Control Stack
+    - Runtime Stack
+    - Machine Stack
