@@ -14,6 +14,8 @@ Behind the scene of Javascript code
 
 ** All this thing is mannaged by Call Stack **
 
+- Call Stack is used to mannage the Execution contact chaining.
+
 When we run a programme call stack is populated with the Global Execution contaxt.
 
 When a function is invoked, a new execution contex is created, this execution context is put inside the stack.
