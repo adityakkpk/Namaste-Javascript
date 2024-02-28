@@ -55,3 +55,14 @@ var getName = function () {
 
 console.log(getName);
 */
+
+
+//Call Stack Demo with the help of debugger in browser's source
+var x = 7;
+function getName () {
+    console.log("Aditya");
+}
+
+getName();
+console.log(x);
+console.log(getName);
