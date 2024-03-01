@@ -1,0 +1,3 @@
+Variable Environment :
+        - Memory Space of Execution context is known as variable Environment.
+        

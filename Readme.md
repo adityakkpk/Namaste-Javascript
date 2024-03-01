@@ -23,3 +23,9 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * ### What is Histing ?
 * ### How it works?
 * ### Call Stack Demo
+
+## Day 4 - How Functions work in JS and Variable Environment
+
+* ## Function Invocation.
+* ## How the call stack works behind the scene
+* ## Demo of Variable Environment and call stack in Browser
