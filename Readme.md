@@ -41,3 +41,11 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * With the creation of Global Execution Context, 'this' is also created.
 
 * At the global level ``` this === window ```
+
+## Day 6 - undefined vs not defined in JS
+
+* In memory creation phase variables are assigned 'undefined'. Which means variable id declared but it doesnot assign any value.
+
+* Not defined means, variable is not declared in the peogram.
+
+* Javascript is a loosely typed lanuage.
