@@ -68,5 +68,39 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Lexical Environment is the local memory along with the reference to the lexical parent.
     - In memory creation phase along with the variable or function references another reference is created for the parent lexical environment. This refers to the varibles and functions of the parent environment.
 
-**Scope Chain**
+* **Scope Chain**
     - Scope chain is nothing but it is the chain of lexical environment's reference to their parent lexical environment.
+
+---
+### Day 8 - let & const in JS 🔥Temporal Dead Zone
+
+* **let and Const**:
+    - 'let and const' are strict variable declaration than var.
+    - 'let and const' declarations are **Hoisted**.
+    - They are in the **Temporal Dead Zone** for the time being.
+    - When we declare a variable with 'let or const' they are assigned memory but in different place not in Global object.
+    - You cannot access this let and const declaration before initialization.
+    - When we declare a variable with 'let or const' they are not present in *window* object. They are present in some other place.
+
+* **Temporal Dead Zone**:
+    - Since let and const variables ae declared till they assigned some values that time between that is known as *Temporal Dead Zone*.
+
+* **Const** :
+    - const is more strict variable declaration than let.
+    - If we declare a variable with const we have to assign some value to it otherwise it will give an *SyntexError*.
+
+* **Syntex Error, Type Error and Reference Error**: 
+    - *Syntex Error* :
+        - If you write any thing which are not in syntex, thenJS will give you  Syntex Error.
+    
+    - *Type Error* :
+        - When you try to assign another value in const variable it will give you type error. Because it is a const typed variable.
+        
+    - *Reference Error* :
+        - When JS try to find a variable in memory space and you cannot access it then JS gives an Reference Error.
+
+* **Best Practices** :
+    - Always put your declaration and initialization on the top of your program.
+    - Try to use 'const' to declare a variable whenever possible.
+    - If not const use 'let' to declare a variable whenever possible.
+    - Keep 'var' aside don't use frequently. There might be some cases where you will use 'var' but use it very consciously.
