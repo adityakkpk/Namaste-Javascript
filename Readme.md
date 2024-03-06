@@ -104,3 +104,25 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Try to use 'const' to declare a variable whenever possible.
     - If not const use 'let' to declare a variable whenever possible.
     - Keep 'var' aside don't use frequently. There might be some cases where you will use 'var' but use it very consciously.
+
+### Day 9 - BLOCK SCOPE & Shadowing in JS
+
+* **BLOCK**:
+    - {} it is known as Block.
+    - {} it is also known as Compound Statement
+    - Why to use Blocks?
+        - We need to group these statements together so that we can use multiple statement in a place where JS expects only one statement.
+    - Example : 'if()' condition expects only one statement only. But if we want to execute more than one statements we need to group them into a Block('{}').
+
+* **BLOCK SCOPE**:
+    - All the variables and functions we can access in the block.
+    - 'let and const are blocked scoped'.
+    - we cannot access let and const outside the block.
+    - It also follow lexical scope.
+    - All the scope rulrs works with the function is also work with the Arrow functions.
+
+* **SHADOWING**:
+    - If you have same variable name outside the block, inner variable shadows the outer variable.
+    - It behaves same in both(functions and variables).
+* *Illegal Shadowing*:
+    - Shadowing let or const variable inside block with var is illegal shadowing.
