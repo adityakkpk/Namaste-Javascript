@@ -1,7 +1,7 @@
 Behind the scene of Javascript code
 ===================================
 
-- When you run your code a Global Execution Contex is Created which has two components which are Memory component and Code component.
+- When you run your code a Global Execution Contex is Created which has two components, which are Memory component and Code component.
 
 - This Execution Contex is created in two phases first phase is known as the creation/memory creation phase and second phase is known as the code execution phase.
 

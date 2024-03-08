@@ -12,7 +12,7 @@ Core Fundamentals
   =================
 
     - "Everything in Javascript happens inside an Execution Context"
-    - You can asume it as a big container in which whole Javascrip code is executed.
+    - You can assume it as a big container in which whole Javascrip code is executed.
     - It has two components in it.
 
         a) Memory component

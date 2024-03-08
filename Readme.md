@@ -22,7 +22,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 ---
 ### Day 3 - Hoisting
 
-* What is Histing ?
+* What is Hoisting ?
 * How it works?
 * Call Stack Demo
 
@@ -49,7 +49,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 ---
 ### Day 6 - undefined vs not defined in JS
 
-* In memory creation phase variables are assigned 'undefined'. Which means variable id declared but it doesnot assign any value.
+* In memory creation phase variables are assigned 'undefined'. Which means variable is declared but it does not assign any value.
 
 * Not defined means, variable is not declared in the peogram.
 
@@ -124,5 +124,26 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * **SHADOWING**:
     - If you have same variable name outside the block, inner variable shadows the outer variable.
     - It behaves same in both(functions and variables).
-* *Illegal Shadowing*:
+* **Illegal Shadowing**:
     - Shadowing let or const variable inside block with var is illegal shadowing.
+
+### Day 10 - Closures and Currying in JS 🔥 
+
+* **Closure**:
+    - Closure is a function bind together to its lexical environment.
+    - Function along with its lexical scope forms a closure.
+    - When we return a function from a function then the returned function maintain their lexical environment. This situaton is the example of closure in JS.
+    - In closuers the value of variables are not garbage collected.
+
+* *Uses of Closures*:
+    - Module Design Pattern
+    - Currying
+    - Function like once
+    - memoize
+    - maintaining state in async world
+    - setTimeouts
+    - Iterators
+
+* **Currying**:
+    - The concept of currying comes into play when you don't want to run the function until all the function parameters ain't available. 
+    - A situation like this may arrive when you are taking data from different APIs.
