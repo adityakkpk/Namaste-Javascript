@@ -3,7 +3,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 #### Below you will find my Day by Day learnings
 
 ---
-### Day 1
+### Day 1 - Introduction
 
 * Core Fundamentals
 > "Everything in Javascript happens inside an **Execution Context**"
@@ -14,7 +14,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * synchronous single-threaded
 
 ---
-### Day 2 
+### Day 2 - How Javascript works?
 
 * How Javascript Code is Executed?
 * Call Stack
@@ -104,7 +104,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Try to use 'const' to declare a variable whenever possible.
     - If not const use 'let' to declare a variable whenever possible.
     - Keep 'var' aside don't use frequently. There might be some cases where you will use 'var' but use it very consciously.
-
+---
 ### Day 9 - BLOCK SCOPE & Shadowing in JS
 
 * **BLOCK**:
@@ -127,6 +127,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * **Illegal Shadowing**:
     - Shadowing let or const variable inside block with var is illegal shadowing.
 
+---
 ### Day 10 - Closures and Currying in JS 🔥 
 
 * **Closure**:
@@ -147,3 +148,8 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * **Currying**:
     - The concept of currying comes into play when you don't want to run the function until all the function parameters ain't available. 
     - A situation like this may arrive when you are taking data from different APIs.
+
+---
+### Day 11 - setTimeout + Closures Interview Question 🔥
+
+* Understand BTS of Closures with setTimeout();
