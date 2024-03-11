@@ -153,3 +153,15 @@ In this repositiry you will find all the codes of Javascript which i have learne
 ### Day 11 - setTimeout + Closures Interview Question 🔥
 
 * Understand BTS of Closures with setTimeout();
+
+### Day 12 - CRAZY JS INTERVIEW 🤯ft. Closures
+
+* Show some interview questions on closures.
+* Data hiding by closures
+* Constructor functions 
+* *Disadvantages*
+    - Overconsumption of memory
+    - If Garbage collection is not handled properly it can lead to memory leaks and it can also freez the browser.
+
+* **Garbage Collector**:
+    - It is a program in JS engine which frees un-utilized memory.
