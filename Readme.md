@@ -154,6 +154,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 * Understand BTS of Closures with setTimeout();
 
+---
 ### Day 12 - CRAZY JS INTERVIEW 🤯ft. Closures
 
 * Show some interview questions on closures.
@@ -165,3 +166,41 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 * **Garbage Collector**:
     - It is a program in JS engine which frees un-utilized memory.
+
+
+---
+## Day 13 - FIRST CLASS FUNCTIONS 🔥ft. Anonymous Functions 
+
+* **Function Statement/Function Declaration and Function Expression**
+    - The main difference between Function Statement and Function Expression is Hoisting.
+
+* **Anonymous Function**
+    - Function without a name is known as a Anonymous function.
+    - Anonymous functions does not have their own identity.
+    - Anonymous functions are used at that place where functions are used as values.
+    - In Function Statement/Function Declaration you cannot use anonymous function but in case of Function Expression (assigning a function to a variable) you can us anonymous function.
+
+* **Named Function Expression**
+    - Assigning a named function to a variable is known as Named Function Expression.
+    - If we call this function with its name intead of variable name it will give an uncaugh reference error.
+    -You can access this function inside itself with its name but you caanot acesss it outside with its name.
+
+* **Parameters & Arguments**
+    - Parameters are the local variables inside the function scope.
+    - Arguments are the variables which are passed in functions when we try to acess functions.
+
+* **First class Function**
+    - The ability to use functions as values are known as First class function.
+    - The ability to pass a function as an argument to a function.
+    - The ability to return a function from a function.
+
+* **First class Citizens**
+    - Functions are First Class Citizens.
+    - First Class Citizens/Functions both are same things.
+
+* **Arrow Function**
+    - This thing comes as a part in ES6.
+    - All thse upper functions can be written usinf arrow functions.
+
+---
+## Day 14 - 
