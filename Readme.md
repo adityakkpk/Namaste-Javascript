@@ -203,4 +203,19 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - All thse upper functions can be written usinf arrow functions.
 
 ---
-## Day 14 - 
+## Day 14 - Callback Functions in JS ft. Event Listeners 🔥
+
+* **Callback Function**
+    - Functions are first class citizens of JS that means you can take a function and pass it to another function. And when you do so, you pass a function to another function, the function which you pass to another function is known as callback function.
+    - Callback functions give us the access to the whole asynchronus world in a synchronous single threaded language.
+
+* **Bloking of the main thread**
+    - In JS everything is run by a callstack. If you write a code that takes time longer than usual it will block the flow for some time. This situation is known as the blocking of the main thread.
+    - To tackel this situation we use callback, setTimeout like functions.
+
+* **Event Listeners**
+
+* **Closuers along with Event Listeners**
+
+* **Garbage collection & removeEventListenenrs**
+    - Eventlisteners are heavy that means it takes memory. Even the call stack is empty, Eventlisteners does not free the memory. That is why we have to remove Eventlisteners.
