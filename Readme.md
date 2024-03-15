@@ -219,3 +219,6 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 * **Garbage collection & removeEventListenenrs**
     - Eventlisteners are heavy that means it takes memory. Even the call stack is empty, Eventlisteners does not free the memory. That is why we have to remove Eventlisteners.
+
+---
+## Day 15 - 
