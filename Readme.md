@@ -239,3 +239,17 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Global object is window. Browsers gives these Web APIs features to JS through a keyword *window*.
 
 * **Event Loop**:
+    - How setTimeout() works BTS?
+        - Whenever we execute a JS code a global execution context is created an pushed inside the call stack and code is executed line by line.
+        - setTimeout() calls the setTimeout Web API and calls the timer feature of Browser.
+        - setTimeout() takes a callback function and some delay. So when we we call a setTimeout() function in our program it registers a callback and stars the timer as per the delay.
+        - And the JS 
+        - As soon as the timer expires, the callback function needs to be executed. At this time the execution context is poped out from the call stack as JS engine executed all the lines of code.
+        - So To execute this callback of setTimeout(), *Event Loops* and *callback queue* comes into the picture.
+        - As soon as the timer expires, the callback function needs to go to the call stack but it cannot go to the call stack directly. It goes to the call stack through the callback queue.
+        - So when the timer expires, this callback is push inside the callback queue.
+        - Event Loop checks the callback queue, if it finds a method it just pushed it into the call stack and then call stack executes this callback function.
+        - Event loop works as an gate keeper.
+
+    - How Event Listeners work in JS?
+        - 
