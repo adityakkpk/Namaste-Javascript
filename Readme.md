@@ -1,6 +1,6 @@
 In this repositiry you will find all the codes of Javascript which i have learned from *'Namaste Javascript'* playlist available on **Akshay Saini's** Youtube channel.
 
-#### Below you will find my Day by Day learnings
+# My Notes
 
 ---
 ### Day 1 - Introduction
@@ -221,4 +221,21 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Eventlisteners are heavy that means it takes memory. Even the call stack is empty, Eventlisteners does not free the memory. That is why we have to remove Eventlisteners.
 
 ---
-## Day 15 - 
+## Day 15 - Asynchronous JavaScript & EVENT LOOP from scratch 🔥
+
+* **Web API**
+    - Web APIs are a part of Browsers.
+    - JS is synchronous single threaded language, it has one call stack and it can only do one task at a time. The call stack is present in JS engine and all the code in JS executed in the call stack. 
+    - In Browser we have JS engine, localstorage, timer, Bluetooth access etc. and inside JS engine we have call stack.
+    - To access all the features of Browser we need Web APIs.
+    - Some Web APIs are: 
+        - setTimeout()
+        - DOM APIs
+        - fetch()
+        - localStorage
+        - console
+        - Location 
+    - The browser gives us access to Web APIs in JS engine's call stack to use all these featuers as *Global object*.
+    - Global object is window. Browsers gives these Web APIs features to JS through a keyword *window*.
+
+* **Event Loop**:
