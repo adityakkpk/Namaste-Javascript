@@ -242,7 +242,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - How setTimeout() works BTS?
         - Whenever we execute a JS code a global execution context is created an pushed inside the call stack and code is executed line by line.
         - setTimeout() calls the setTimeout Web API and calls the timer feature of Browser.
-        - setTimeout() takes a callback function and some delay. So when we we call a setTimeout() function in our program it registers a callback and stars the timer as per the delay.
+        - setTimeout() takes a callback function and some delay. So when we we call a setTimeout() function in our program it registers a callback in Web APIs environment and stars the timer as per the delay.
         - And the JS 
         - As soon as the timer expires, the callback function needs to be executed. At this time the execution context is poped out from the call stack as JS engine executed all the lines of code.
         - So To execute this callback of setTimeout(), *Event Loops* and *callback queue* comes into the picture.
@@ -252,4 +252,38 @@ In this repositiry you will find all the codes of Javascript which i have learne
         - Event loop works as an gate keeper.
 
     - How Event Listeners work in JS?
-        - 
+        - Whenever we execute a JS code a global execution context is created an pushed inside the call stack and code is executed line by line.
+        - Whenever we do 'document.' the DOM web API is called. DOM is a tree like structure of HTML code.
+        - When we call 'addeventListener' method it registers a callback on an event.
+        - So the callback is stay in the Web API environment and waits for the event to trigger.
+        - As soon as the event is triggered, the callback method is pushed into the callback queue and waits for its tern to executed.
+
+    - What does event loop does?
+        - The job of event loop is to monitor continuously call stack abd callback queue.
+        - If the call stack is empty and there is a callback function is inside the callback queue, it just takes the function and push it into the call stack.
+        - And then this callback is quickly executed.
+    
+    - Why we need callback queue?
+        - If any point of time in our program multiple events are triggered at the same time, which make out code execution to slow. To make our execution fast we use callback queue. 
+        - When multiple events are triggerd at the same time the callback queue holds all the callbacks and Event Loop pushes them one by one into the call stack and executes them without stoping the flow of the program. 
+
+* **Fetch Web API**:
+    - How fetch() method works BTS?
+        - The fetch() is a Web API which is used to make networks calls. It returns a Promise and this promise is handled by callback functions.
+        - As we call the fetch function in our code it makes a network call and registers the callback in Web API environment.
+        - The callback function waits for the data to return from the server. As soon as data is returned from the server, the callback function will pushed into the microtask queue and with the help of event loop it will be pushed into the call stack and it will executed.
+
+* **Microtask Queue**:
+    - It is also a queue of callback functions as callback queue but it has higher priority than callback queue. 
+    - All the functions related to Promises and Mutation observer goes inside this microtask queue. And event loops keeps checking the queue and pushes these function in call stack to execute.
+
+* In case, if the callback of fetch and the callback of setTimeout are ready in their particular queues to be executed but the main thread is running so the both of the function will wait for the main thread to be execute first then the microtask queue's function will executed then the callback queue's function will execute. 
+
+* The callback queue also known as the Task queue.
+
+* **Starvation of functions in Callback queue**:
+    - If there are multiple callbacks are inside the microtask queue and only one callback is inside the callback queue. The event loop will first execute all the callbacks from the microtask queue then it will execute the callback of callback queue. 
+    - In case, If microtask is creating another microtask and this keeps going then the callback inside the callback queue will be not execute for a long time. This condition is known as **starvation**.
+
+---
+## Day 16 - 
