@@ -324,7 +324,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - GC uses 'Mark and Sweep Algorithm'.
 
 * **Google's V8 Engine** 
-    - It is the fastest JS engine is ever created. V8 has an interpreter named 'Ignition' and compilet named 'Turbofan.
+    - It is the fastest JS engine is ever created. V8 has an interpreter named 'Ignition', compilet named 'Turbofan and GC named 'Orinoko'.
 
 ---
 ## Day 17 - 
