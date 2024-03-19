@@ -286,4 +286,28 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - In case, If microtask is creating another microtask and this keeps going then the callback inside the callback queue will be not execute for a long time. This condition is known as **starvation**.
 
 ---
-## Day 16 - 
+## Day 16 - JS Engine EXPOSED 🔥 Google's V8 Architecture 🚀 
+
+* **Javascript Runtime Environment**
+    - It is a container which has all the things which are required to run a Javascript code.
+    - It has a JS Engine, some APIs, Event Loop, Callback Queue etc.
+    - JS Engine is the heart of Jacascript Runtime Environment.
+
+* **JS Engine**
+    - List of JS Engines:
+        - 'Chakra' used in Microsoft Edge.
+        - 'SpiderMonkey' used in Microsoft Edge.
+        - 'V8' used in Microsoft Edge.
+
+    - First Js Engine:
+        - 'Spider Monkey' was the fist JS engine which was created by Brendan Eich the creator of JS.
+
+    - JS Engine Architecture:
+        - It is not a machine, it is a programme which is written in low level languages. For example V8 engine is made up of C++.
+        - JS Engine runs the code in Three phases :
+            1) Parsing
+            2) Compilation
+            3) Execution
+
+            1) Parsing :
+                - During the parsing phase, the which you write is brocken down in 'Tockens'. And there is something known as Syntex Parser which takes our code and converts it into AST (Abstract syntax tree).
