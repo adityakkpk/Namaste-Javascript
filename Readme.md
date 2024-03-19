@@ -300,7 +300,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
         - 'V8' used in Microsoft Edge.
 
     - First Js Engine:
-        - 'Spider Monkey' was the fist JS engine which was created by Brendan Eich the creator of JS.
+        - 'Spider Monkey' was the fist JS engine which was created by "Brendan Eich" the creator of JS.
 
     - JS Engine Architecture:
         - It is not a machine, it is a programme which is written in low level languages. For example V8 engine is made up of C++.
@@ -310,4 +310,21 @@ In this repositiry you will find all the codes of Javascript which i have learne
             3) Execution
 
             1) Parsing :
-                - During the parsing phase, the which you write is brocken down in 'Tockens'. And there is something known as Syntex Parser which takes our code and converts it into AST (Abstract syntax tree).
+                - During the parsing phase, the code which you write is brocken down in 'Tockens'. And there is something known as Syntex Parser which takes our code and converts it into AST (Abstract syntax tree)(astexplorer.net). Now this AST is passed to the Compilation Phase.
+            
+            - JS has something known as Just In Time Compilation. JS engine can use an interpreter along with compiler ant that makes it as Just In Time Compile language.
+            - JIT Compiler uses interpreter and a compiler to execute tje JS code.
+                
+            2) Compilation and 3) Execution
+                - AST coming from parsing phase is now goes to the interpreter ant the interpreter converts this high level code to byte code and the code moves to the execution phase. While it is donig all this work, it takes the help of the compiler to optimise the code. So while the code is optimized compiler also try to optimise the code as it can.
+
+                - The execution is not possible without two major components of the JS engine. Those two components are "Memory Heap" and "Call Stack".
+
+* **Garbage Collector**
+    - GC uses 'Mark and Sweep Algorithm'.
+
+* **Google's V8 Engine** 
+    - It is the fastest JS engine is ever created. V8 has an interpreter named 'Ignition' and compilet named 'Turbofan.
+
+---
+## Day 17 - 
