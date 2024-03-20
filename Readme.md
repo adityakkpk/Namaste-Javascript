@@ -327,4 +327,12 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - It is the fastest JS engine is ever created. V8 has an interpreter named 'Ignition', compilet named 'Turbofan and GC named 'Orinoko'.
 
 ---
-## Day 17 - 
+## Day 17 - TRUST ISSUES with setTimeout()
+
+* **Why this Trust Issue ?**
+    - Suppose we have many lines of code after the setTimeout() function which takes a lot of time to execute. In that case the Global Execution Context will be busy to execute these lines of code while the timer is running. Suppose GEC takes 10s to run those lines and the timer of setTimeout is 5s, So what happen is the GEC will keep running these lines after runnig these lines it will execute the setTimeout function's callback. So in this case you can see that the setTimeout() function is running after 10s even the timer gicen to setTimeout is 5s.
+
+    - The setTimeout() function's timer was for 5s but it will wait for GEC to move out of the call stack. The setTimeout() will wait for the whole program to execute before its callback function to be pushed into the call stack. As soon as the GEC will move out from the call stack the event loop will put the callback function into the call stack and call stack will quickly execute the function.
+
+* **setTimeout(()=> {}, 0)**:
+    - Even if there is 0 millis the function has to go through the whole process of setTimeout API. The callback will be registerd in the web API environmet and even after the timer is expired it will wait for the wholw program to be executed first then the callback function will execute.
