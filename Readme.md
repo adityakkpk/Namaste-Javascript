@@ -336,3 +336,22 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 * **setTimeout(()=> {}, 0)**:
     - Even if there is 0 millis the function has to go through the whole process of setTimeout API. The callback will be registerd in the web API environmet and even after the timer is expired it will wait for the wholw program to be executed first then the callback function will execute.
+
+---
+## Day 18 - High-Oreder Function
+
+* **High-Oreder Function**:
+    - A function that takes another function as an argument or returns a function from it.
+    - Example: 
+        ``` javascript
+        function x(){
+            console.log('x');
+        }
+        function y(x){
+            x();
+        }
+        y(x);
+        //Here, x is the callback function and the y is the High-order function
+
+        ```
+    - 
