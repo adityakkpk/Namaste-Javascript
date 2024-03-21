@@ -169,7 +169,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 
 ---
-## Day 13 - FIRST CLASS FUNCTIONS 🔥ft. Anonymous Functions 
+### Day 13 - FIRST CLASS FUNCTIONS 🔥ft. Anonymous Functions 
 
 * **Function Statement/Function Declaration and Function Expression**
     - The main difference between Function Statement and Function Expression is Hoisting.
@@ -203,7 +203,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - All thse upper functions can be written usinf arrow functions.
 
 ---
-## Day 14 - Callback Functions in JS ft. Event Listeners 🔥
+### Day 14 - Callback Functions in JS ft. Event Listeners 🔥
 
 * **Callback Function**
     - Functions are first class citizens of JS that means you can take a function and pass it to another function. And when you do so, you pass a function to another function, the function which you pass to another function is known as callback function.
@@ -221,7 +221,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Eventlisteners are heavy that means it takes memory. Even the call stack is empty, Eventlisteners does not free the memory. That is why we have to remove Eventlisteners.
 
 ---
-## Day 15 - Asynchronous JavaScript & EVENT LOOP from scratch 🔥
+### Day 15 - Asynchronous JavaScript & EVENT LOOP from scratch 🔥
 
 * **Web API**
     - Web APIs are a part of Browsers.
@@ -286,7 +286,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - In case, If microtask is creating another microtask and this keeps going then the callback inside the callback queue will be not execute for a long time. This condition is known as **starvation**.
 
 ---
-## Day 16 - JS Engine EXPOSED 🔥 Google's V8 Architecture 🚀 
+### Day 16 - JS Engine EXPOSED 🔥 Google's V8 Architecture 🚀 
 
 * **Javascript Runtime Environment**
     - It is a container which has all the things which are required to run a Javascript code.
@@ -327,7 +327,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - It is the fastest JS engine is ever created. V8 has an interpreter named 'Ignition', compilet named 'Turbofan and GC named 'Orinoko'.
 
 ---
-## Day 17 - TRUST ISSUES with setTimeout()
+### Day 17 - TRUST ISSUES with setTimeout()
 
 * **Why this Trust Issue ?**
     - Suppose we have many lines of code after the setTimeout() function which takes a lot of time to execute. In that case the Global Execution Context will be busy to execute these lines of code while the timer is running. Suppose GEC takes 10s to run those lines and the timer of setTimeout is 5s, So what happen is the GEC will keep running these lines after runnig these lines it will execute the setTimeout function's callback. So in this case you can see that the setTimeout() function is running after 10s even the timer gicen to setTimeout is 5s.
@@ -338,7 +338,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Even if there is 0 millis the function has to go through the whole process of setTimeout API. The callback will be registerd in the web API environmet and even after the timer is expired it will wait for the wholw program to be executed first then the callback function will execute.
 
 ---
-## Day 18 - High-Oreder Function
+### Day 18 - High-Oreder Function
 
 * **High-Oreder Function**:
     - A function that takes another function as an argument or returns a function from it.
@@ -354,4 +354,18 @@ In this repositiry you will find all the codes of Javascript which i have learne
         //Here, x is the callback function and the y is the High-order function
 
         ```
-    - 
+---
+### Day 19 - map, filter & reduce
+
+* **Map**
+    - Map is generally used to transform an array.
+
+* **Filter**
+    - Filter function is use to filter the data inside an Array and returns a new filtered array.
+
+* **Reduce**
+    - It used at the place where you have to take all the elements of an array and come up with an single value out of them.
+    - reduce function takes two arguments first is the function and the second is the initial value of the accumulator in the function passed as first argument.
+
+---
+### Day 20 - 
