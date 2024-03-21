@@ -108,5 +108,5 @@ const users = [
 
 // console.log(sameAges);
 
-const op = users.filter(x => x.age<30).map(x => x.firstName);
+const op = users.filter(x => x.age<20).map(x => x.firstName);
 console.log(op);
