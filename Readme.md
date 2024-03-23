@@ -372,6 +372,12 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 * **Callback hell**
     - Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code. 
+    - When we pass a function as an argument into another function, the function passed as an argument is known as callback function. If we pass a callback function inside a callback and this process continues. This grows the code horizontally which makes it unreadable. That mechanism is known as callback hell.
 
 * **Inversion of Control**
     - You lose the control of your code when we are using callback.
+    - It means you lose the control of your code while using the callback function. The callback function is passed to another callback function which means we depend upon the outer  callback function to run the inner callback function.
+
+---
+### Day 21 - Promise in JS
+
