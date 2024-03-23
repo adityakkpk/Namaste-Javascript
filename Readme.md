@@ -368,4 +368,10 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - reduce function takes two arguments first is the function and the second is the initial value of the accumulator in the function passed as first argument.
 
 ---
-### Day 20 - 
+### Day 20 - Callback Hell
+
+* **Callback hell**
+    - Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code. 
+
+* **Inversion of Control**
+    - You lose the control of your code when we are using callback.
