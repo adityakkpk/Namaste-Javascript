@@ -382,6 +382,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 ### Day 21 - Promise in JS
 
 * **Promises**
+    - Promise is an object representing the eventual completion or failure of an asynchronous operation.
     - Promises are used to handle async operation in Javascript.
     - Promise is nothing but an object with some data value in it.
     - When a async function will return a Promise, an empty object will created with empty values. After whatever time it takes the promise object will filled with the data automatically.
@@ -394,7 +395,6 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * **Promise Object**
     - It is a placeholder until we receive some value from a async operation.
     - It is a container for a future value.
-    - It is an object representing the eventual completion or failure of an asynchronous operation.
     - The promise objects are immutable. It means when it is filled with some data, the data cannot be changed.
     - The promise object only resolved once.
     - Example: 
@@ -418,3 +418,6 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * **Promise Chaining**
     - Promise comes with the important feature of Promise Chaining.
     - Promises helps us to avoid callback hell using the concept of promise chaining.
+
+--- 
+### Day 22 - 
