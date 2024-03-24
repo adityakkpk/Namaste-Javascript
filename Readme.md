@@ -372,12 +372,49 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
 * **Callback hell**
     - Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code. 
-    - When we pass a function as an argument into another function, the function passed as an argument is known as callback function. If we pass a callback function inside a callback and this process continues. This grows the code horizontally which makes it unreadable. That mechanism is known as callback hell.
+    - When we pass a function as an argument into another function, the function passed as an argument is known as callback function. If we pass a callback function inside a callback and this process continues. Passing the callback function like this is not relaibale. This grows the code horizontally which makes it unreadable. That mechanism is known as callback hell.
 
 * **Inversion of Control**
     - You lose the control of your code when we are using callback.
-    - It means you lose the control of your code while using the callback function. The callback function is passed to another callback function which means we depend upon the outer  callback function to run the inner callback function.
+    - It means you lose the control of your code while using the callback function. The callback function is passed to another callback function which means we depend upon the outer callback function to run the inner callback function.
 
 ---
 ### Day 21 - Promise in JS
 
+* **Promises**
+    - Promises are used to handle async operation in Javascript.
+    - Promise is nothing but an object with some data value in it.
+    - When a async function will return a Promise, an empty object will created with empty values. After whatever time it takes the promise object will filled with the data automatically.
+    - Once we got the promise object, now we will attach a callback function to this promise object using 'then()' method which is present inside the promise object. As soon as the promise object filled with data after some time, the callback function will automatically called.
+
+* **Callbacks vs Promises**
+    - In callbacks we passes the function inside a callback and we rely on the outer callback to execute the inner function. In case of promises we are attaching a callback to a promise object, the callback will automatiacally ececute after the promise object will filled with data.
+    - In callbacks we have a doubt like how many times this callback will be executed or not. In the case of promises this condition is handled beautifully. As soon as we have data inside the promise object, the callback function will be executed and it will be execute only once. Ant that is how we will have the controll of our code.
+
+* **Promise Object**
+    - It is a placeholder until we receive some value from a async operation.
+    - It is a container for a future value.
+    - It is an object representing the eventual completion or failure of an asynchronous operation.
+    - The promise objects are immutable. It means when it is filled with some data, the data cannot be changed.
+    - The promise object only resolved once.
+    - Example: 
+        ``` javascript
+            const user = fetch('https://api.github.com/users/adityakkpk');
+
+            console.log(user); // promise-> pending
+
+            // While this console.log statement is executed the user object is in pending state. because JS engine quickly executes the code and the fetch function returns a promise and this promise is in a "pending" state at the particular time. After some time the data will come inside the promise object so when we expend the promise it will show us the current state, PromiseState as fullfield.
+
+            user.then(function (data) {
+                console.log(data);
+            });
+            // This callback function will only execute once afted the promise object will filled with data
+        ```
+    - There can be only three States of Promise:
+        1) Pending
+        2) Rejected
+        3) Fullfield
+
+* **Promise Chaining**
+    - Promise comes with the important feature of Promise Chaining.
+    - Promises helps us to avoid callback hell using the concept of promise chaining.
