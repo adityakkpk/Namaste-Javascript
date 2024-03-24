@@ -388,6 +388,13 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - When a async function will return a Promise, an empty object will created with empty values. After whatever time it takes the promise object will filled with the data automatically.
     - Once we got the promise object, now we will attach a callback function to this promise object using 'then()' method which is present inside the promise object. As soon as the promise object filled with data after some time, the callback function will automatically called.
 
+* **Importance of Promises**:
+    a) Promises can help us to write trust worthy code.
+    b) Promises are used to solve the problems of callbacks like inversion of control and callback hell.
+    c) They give us the result prompt in three states: 1) Pending 2) Fulfilled 3) Rejected
+    d) We can attach function to promise object and retrieve its value unlike callbacks no need to pass the function.
+    e) Nesting can be done in Promises and with the help of that we can return the values in each individual chain.
+
 * **Callbacks vs Promises**
     - In callbacks we passes the function inside a callback and we rely on the outer callback to execute the inner function. In case of promises we are attaching a callback to a promise object, the callback will automatiacally ececute after the promise object will filled with data.
     - In callbacks we have a doubt like how many times this callback will be executed or not. In the case of promises this condition is handled beautifully. As soon as we have data inside the promise object, the callback function will be executed and it will be execute only once. Ant that is how we will have the controll of our code.
