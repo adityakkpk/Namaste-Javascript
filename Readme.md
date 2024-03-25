@@ -427,4 +427,6 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Promises helps us to avoid callback hell using the concept of promise chaining.
 
 --- 
-### Day 22 - 
+### Day 22 - Creating a Promise, Chaining & Error Handling
+
+* Go to the particular folder for the notes
