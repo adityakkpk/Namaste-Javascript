@@ -1,14 +1,25 @@
 const cart = ["shoes","pants", "kurta"];
 
-const promise = createOreder(cart);// orderId
-
-promise.then(function (orderId) {
-    console.log(orderId);
-    //proceedToPayment(orderId);
-})
-.catch((err) =>{
-    console.log(err.message);
-})
+createOreder(cart)
+    .then(function (orderId) {
+        console.log(orderId);
+        return orderId;
+    })
+    .catch((err) =>{
+        console.log(err.message);
+    })
+    .then(function (orderId){
+        return proceedToPayment(orderId)
+    })
+    .then((paymentInfo)=>{
+        console.log(paymentInfo);
+    })
+    .catch((err) =>{
+        console.log(err.message);
+    })
+    .then(function (orderId){
+        console.log("No matter what hapens, I will definately will called.");
+    })
 
 function createOreder(cart){
 
@@ -17,7 +28,7 @@ function createOreder(cart){
         //validateCart
         //orderId
         if(!validateCart(cart)){
-            reject(new Error("Cart in not Valid"));
+            reject(new Error("Cart in not Valid. :("));
         }
 
         const orderId = "12345";
@@ -32,6 +43,12 @@ function createOreder(cart){
 
     return pr;
 
+}
+
+function proceedToPayment (orderId) {
+    return new Promise((resolve, reject) => {
+        resolve("Payment Successfull. :)")
+    })
 }
 
 function validateCart(cart){

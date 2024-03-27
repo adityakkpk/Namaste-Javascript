@@ -429,4 +429,31 @@ In this repositiry you will find all the codes of Javascript which i have learne
 --- 
 ### Day 22 - Creating a Promise, Chaining & Error Handling
 
-* Go to the particular folder for the notes
+* Go to the particular folder for the codes
+
+* **Creating A new Promise**
+    - Example: 
+        ```Javascript
+
+        const pr = new Promise(function (resolve, reject) {
+                if(!validateCart(cart)){
+                    reject(new Error("Cart in not Valid. :("));
+                }
+
+                const orderId = "12345";
+
+                if(orderId){
+                    setTimeout(() => {
+                        resolve(orderId);
+                    }, 5000);
+                }
+            });
+
+        ```
+
+* **Advance Error Handling**
+    - Whatever the errors are there, the catch method will handle them, if they are occuring before catch method.
+    - Whenever you have a catch method. And whatever happens after the catch method, the code will run after the catch method. It means if any error occured after the catch method, the catch method will not handle them.
+
+---
+### Day 23 - 
