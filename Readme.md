@@ -465,3 +465,11 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
     - If any one of these promise is rejected, promise.all() will throw an error.
     - As soon as error happen it will return the error. It will not even wait for other promises to complete their execution.
+
+* **promise.allSetteled()**
+    - To handle the rjected promise calls we use this method.
+    - It takes array/Iterables of promises as input and makes parellal call for all the promises. And wait for all to finish their execution.
+    - If all the promise calls are success, it will return an array of results of all the promises.
+
+    - If any one of these promise is rejected, It will wait for all the promises to get settled.
+    - After completion of promises, it will give you array of all the promise's results like ([success, error, success,...]).
