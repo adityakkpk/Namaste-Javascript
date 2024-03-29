@@ -462,3 +462,6 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - It is used to handle multiple promises together.
     - It takes array/Iterables of promises as input and makes parellal call for all the promises. And wait for all to finish their execution.
     - If all the promise calls are success, it will return an array of results of all the promises.
+
+    - If any one of these promise is rejected, promise.all() will throw an error.
+    - As soon as error happen it will return the error. It will not even wait for other promises to complete their execution.
