@@ -458,7 +458,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
 ---
 ### Day 23 - Promise APIs + Interview Questions 🔥
 
-* **promise.all()**
+* **Promise.all()**
     - It is used to handle multiple promises together.
     - It takes array/Iterables of promises as input and makes parellal call for all the promises. And wait for all to finish their execution.
     - If all the promise calls are success, it will return an array of results of all the promises.
@@ -466,7 +466,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - If any one of these promise is rejected, promise.all() will throw an error.
     - As soon as error happen it will return the error. It will not even wait for other promises to complete their execution.
 
-* **promise.allSetteled()**
+* **Promise.allSetteled()**
     - To handle the rjected promise calls we use this method.
     - It takes array/Iterables of promises as input and makes parellal call for all the promises. And wait for all to finish their execution.
     - If all the promise calls are success, it will return an array of results of all the promises.
@@ -474,17 +474,23 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - If any one of these promise is rejected, It will wait for all the promises to get settled.
     - After completion of promises, it will give you array of all the promise's results like ([success, error, success,...]).
 
-* **promise.race()**
+* **Promise.race()**
     - It returns the results of the fastest settled promise whether it is success or fail. It will not wait for other promises to be settle.
     - It takes array/Iterables of promises as input and makes parellal call for all the promises. 
     - As soon as any of the promise is resolved/success, it will give you the result of the promise which is setteled first.
 
     - If the fastest promise is failed, an error will be retured.
 
-* **promise.any()**
+* **Promise.any()**
     - It takes array/Iterables of promises as input and makes parellal call for all the promises.
     - It waits for the first success/fullfilled/resolved promise. 
     - It returns the first success promise's result.
 
     - What if everything Fails?
         - The return result will we Aggregate Error. And the Aggregate error will be the array of all the errors.
+    
+* **Some Important Lingos:**
+    - *Settled* -> You have got the result.
+    - Once the promise is setteled it can go into two state: 
+        a) Resolve/Success/Fullfilled
+        b) Reject/Failure/Rejected
