@@ -473,3 +473,10 @@ In this repositiry you will find all the codes of Javascript which i have learne
 
     - If any one of these promise is rejected, It will wait for all the promises to get settled.
     - After completion of promises, it will give you array of all the promise's results like ([success, error, success,...]).
+
+* **promise.race()**
+    - It returns the results of the fastest settled promise whether it is success or fail. It will not wait for other promises to be settle.
+    - It takes array/Iterables of promises as input and makes parellal call for all the promises. 
+    - As soon as any of the promise is resolved/success, it will give you the result of the promise which is setteled first.
+
+    - If the fastest promise is failed, an error will be retured.
