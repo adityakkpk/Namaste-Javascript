@@ -456,4 +456,9 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Whenever you have a catch method. And whatever happens after the catch method, the code will run after the catch method. It means if any error occured after the catch method, the catch method will not handle them.
 
 ---
-### Day 23 - 
+### Day 23 - Promise APIs + Interview Questions 🔥
+
+* **promise.all()**
+    - It is used to handle multiple promises together.
+    - It takes array/Iterables of promises as input and makes parellal call for all the promises. And wait for all to finish their execution.
+    - If all the promise calls are success, it will return an array of results of all the promises.
