@@ -480,3 +480,11 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - As soon as any of the promise is resolved/success, it will give you the result of the promise which is setteled first.
 
     - If the fastest promise is failed, an error will be retured.
+
+* **promise.any()**
+    - It takes array/Iterables of promises as input and makes parellal call for all the promises.
+    - It waits for the first success/fullfilled/resolved promise. 
+    - It returns the first success promise's result.
+
+    - What if everything Fails?
+        - The return result will we Aggregate Error. And the Aggregate error will be the array of all the errors.
