@@ -507,3 +507,14 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - What is Await?
         - Await is a keyword that can only be used inside your async function.
     - When you use aync await to handle promises, it seems like JS engine is waiting for the promise to be resolved. But actually it is not waiting.
+
+* What should we use async-await or promise.then()
+    - The async-await is only the syntactic sugars.
+    - Behind the scene both the things are working same.
+    - JS treats both type of code same. It is only different in Syntax.
+    - Async-await is new way to write code.
+    - In async await we get rid of promise chaining.
+
+---
+### Day 25 - Prerequisites for learning React
+
