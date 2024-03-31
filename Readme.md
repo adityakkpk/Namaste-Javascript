@@ -494,3 +494,15 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Once the promise is setteled it can go into two state: 
         a) Resolve/Success/Fullfilled
         b) Reject/Failure/Rejected
+
+---
+### Day 24 - Async Await
+
+* **Async Function**
+    - Async function always returns a promise.
+    - If you are not returning a Promise instead of Promise you return some value, in that case it will wrap this value inside a Promise.
+
+* **Async Await**
+    - Async and Await combo is used to handle promises.
+    - What is Await?
+        - Await is a keyword that can only be used inside your async function.
