@@ -506,3 +506,4 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Async and Await combo is used to handle promises.
     - What is Await?
         - Await is a keyword that can only be used inside your async function.
+    - When you use aync await to handle promises, it seems like JS engine is waiting for the promise to be resolved. But actually it is not waiting.
