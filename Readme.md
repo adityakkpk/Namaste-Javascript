@@ -560,3 +560,7 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - Promises
     - Promise APIs
     - Async Await
+
+* **Error Handling**
+    - try catch
+    - finally
