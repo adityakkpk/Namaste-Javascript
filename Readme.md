@@ -516,5 +516,47 @@ In this repositiry you will find all the codes of Javascript which i have learne
     - In async await we get rid of promise chaining.
 
 ---
-### Day 25 - Prerequisites for learning React
+### Day 25 - How much JS for React?
 
+* **Basics**
+    - Variables
+        - var
+        - let 
+        - const
+    - Hoisting of Variables
+    - Functions
+        - Arrow Functions
+        - Higher Order Function
+
+* **Arrays and Objects**
+    - Array Destructuring
+    - Object Destructuring
+    - rest operator
+    - spread operator
+
+* **Conditional**
+    - If Else
+    - ternary Operator
+    - using && and ||
+    - Optional Chaining
+
+* **Array Methods**
+    - map()
+    - filter()
+    - reduse()
+    - sort()
+
+* **Event Listeners**
+    - onClick
+    - onBlur
+    - onChange
+    - onFocuse
+    - setTimeout & setInterval
+    - Event Bubbling and Event Capturing
+
+* **Asynchronous Events** 
+    - Callbacks
+    - Callback Hell
+    - Promises
+    - Promise APIs
+    - Async Await
