@@ -1,0 +1,48 @@
+* 'this' in global space
+========================
+
+- In global space 'this' is equal to 'window' object.
+- 'this' keyword in global space represent the globalOblect. The globalObject is 'window' in Browser. But in Node.js globalObject is 'global'.
+
+
+
+* 'this' iside a function
+=========================
+
+- The value of 'this' in function is 'undefined' but javascript has something known as 'this substitution' so the value becomes globalObject if you will not use strict mode.
+- 'this' behaves differently in strict mode and normal mode.
+- If you are in a function the vale of 'this' is depends upon the strict / non strict mode. 
+- This value of this in strict mode will be 'undefined' but in non strict mode it will be 'window'. 
+
+
+
+* 'this' inside non-strict mode - (this substitution)
+=====================================================
+
+- The value of 'this' is undefined or null, 'this' will be replaced with globalObject. This phenomena is known as 'this substitution'.
+
+
+
+* 'this' value depends on how the function is called (window)
+=============================================================
+
+- If the function is called without a reference, then the value is undefinded.
+- If you call the function with a objet reference, this it will be the calling object (window).
+- Example: (strict mode)
+    x();//undefined
+    window.x();// Window
+
+
+
+* 'this' inside object's method
+===============================
+
+- When you are inside a method, the value of this will be that object in which the method is present.
+
+* call apply bind methods (sharing methods)
+
+* 'this' inside arrow function
+
+* 'this' inside arrow function
+
+* 'this' inside DOM

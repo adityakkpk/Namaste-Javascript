@@ -564,3 +564,24 @@ In this repositiry you will find all the codes of Javascript which i have learne
 * **Error Handling**
     - try catch
     - finally
+
+---
+### Day 26 - 'this' keywod in Javascript
+
+* 'this' in global space
+
+* 'this' iside a function
+
+* 'this' in strict mode - (this substitution)
+
+* 'this' value depends on how this is called (window)
+
+* 'this' inside object's method
+
+* call apply bind methods (sharing methods)
+
+* 'this' inside arrow function
+
+* 'this' inside arrow function
+
+* 'this' inside DOM
