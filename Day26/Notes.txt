@@ -37,9 +37,20 @@
 * 'this' inside object's method
 ===============================
 
-- When you are inside a method, the value of this will be that object in which the method is present.
+- When you are inside a method, the value of 'this' will be that object in which the method is present.
+
+
+
 
 * call apply bind methods (sharing methods)
+===========================================
+
+- 'this' can be modified by using call apply bind methods.
+- These methods are used when you have to share methods.
+- When we want to share a method of one object ot another object, we override the values of 'this' keyword.
+
+
+
 
 * 'this' inside arrow function
 
