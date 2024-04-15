@@ -11,7 +11,7 @@
 
 - The value of 'this' in function is 'undefined' but javascript has something known as 'this substitution' so the value becomes globalObject if you will not use strict mode.
 - 'this' behaves differently in strict mode and normal mode.
-- If you are in a function the vale of 'this' is depends upon the strict / non strict mode. 
+- If you are in a function the value of 'this' is depends upon the strict / non strict mode. 
 - This value of this in strict mode will be 'undefined' but in non strict mode it will be 'window'. 
 
 
@@ -57,6 +57,8 @@
 
 - Arrow functions does not have their own this.
 - They take the value of their lexical environment in which ther are enclosed.
-- 
 
 * 'this' inside DOM
+===================
+
+- The value of 'this' inside DOM is that HTML element.
