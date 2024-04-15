@@ -53,7 +53,10 @@
 
 
 * 'this' inside arrow function
+==============================
 
-* 'this' inside arrow function
+- Arrow functions does not have their own this.
+- They take the value of their lexical environment in which ther are enclosed.
+- 
 
 * 'this' inside DOM

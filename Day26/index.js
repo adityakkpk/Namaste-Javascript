@@ -44,3 +44,28 @@ const student2 = {
 };
 
 student.printName.call(student2); // now the value of 'this' = student2
+
+
+
+
+//'this' inside arrow function
+
+const obj = {
+    a: 10,
+    x: () => {
+        console.log(this);//window-> enclosed lexical context
+    }
+}
+obj.x();
+
+
+const obj2 = {
+    a: 10,
+    x: function() {
+        const y = ()=>{
+            console.log(this);// {a:10, x: f} -> enclosed lexicql context
+        }
+        y();
+    }
+}
+obj2.x();
