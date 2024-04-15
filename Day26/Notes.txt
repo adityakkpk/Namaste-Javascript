@@ -2,7 +2,7 @@
 ========================
 
 - In global space 'this' is equal to 'window' object.
-- 'this' keyword in global space represent the globalOblect. The globalObject is 'window' in Browser. But in Node.js globalObject is 'global'.
+- 'this' keyword in global space represent the globalObject. The globalObject is 'window' in Browser. But in Node.js globalObject is 'global'.
 
 
 
