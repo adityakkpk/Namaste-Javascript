@@ -12,14 +12,15 @@
 - The value of 'this' in function is 'undefined' but javascript has something known as 'this substitution' so the value becomes globalObject if you will not use strict mode.
 - 'this' behaves differently in strict mode and normal mode.
 - If you are in a function the value of 'this' is depends upon the strict / non strict mode. 
-- This value of this in strict mode will be 'undefined' but in non strict mode it will be 'window'. 
+- This value of 'this' in strict mode will be 'undefined' but in non strict mode it will be 'window'. 
 
 
 
 * 'this' inside non-strict mode - (this substitution)
 =====================================================
 
-- The value of 'this' is undefined or null, 'this' will be replaced with globalObject. This phenomena is known as 'this substitution'.
+- The value of 'this' in non strict mode it will be 'window'. 
+- The value of 'this' is undefined or null, 'this' will be replaced with globalObject(window). This phenomena is known as 'this substitution'.
 
 
 

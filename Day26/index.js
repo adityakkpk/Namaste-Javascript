@@ -13,8 +13,8 @@ function x(){
 
 
 // how this is called
-x();//undefined
-window.x();// window
+// x();//undefined
+// window.x();// window
 
 
 //'this' inside object's method
@@ -37,13 +37,13 @@ const student = {
         console.log(this.name);// vlaue of 'this' = student
     }
 }
-student.printName()
+// student.printName()
 
 const student2 = {
     name: 'deepak',
 };
 
-student.printName.call(student2); // now the value of 'this' = student2
+// student.printName.call(student2); // now the value of 'this' = student2
 
 
 
@@ -56,7 +56,7 @@ const obj = {
         console.log(this);//window-> enclosed lexical context
     }
 }
-obj.x();
+// obj.x();
 
 
 const obj2 = {
@@ -68,4 +68,14 @@ const obj2 = {
         y();
     }
 }
-obj2.x();
+// obj2.x();
+
+
+function a() {
+    let name = "ad"
+    function b() {
+        console.log(this);
+    }
+    b();
+}
+a();
