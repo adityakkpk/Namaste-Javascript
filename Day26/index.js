@@ -70,12 +70,3 @@ const obj2 = {
 }
 // obj2.x();
 
-
-function a() {
-    let name = "ad"
-    function b() {
-        console.log(this);
-    }
-    b();
-}
-a();
